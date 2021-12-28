@@ -7,7 +7,7 @@
 ###	Discord:
 # About Me
 ---
-The first scripts I wrote were written in VBA to simplify work in excel. Then my tasks became more complicated and I began to learn python.  Now I decided to take a JS course and look into the world of the web.
+The first scripts I wrote were written in VBA to simplify work in excel. Then my tasks became more complicated and I began to learn python. Now I decided to take a JS course and look into the world of the web.
 ---
 # Skills
 Learn pandas, selenium.
