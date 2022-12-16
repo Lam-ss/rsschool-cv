@@ -2,93 +2,119 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cv</title>
     <link rel="stylesheet" href="style.css">
-    <title>Curriculum Vitae</title>
+    <link rel="icon" href="./assets/favicon-cv.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="container">
-        <header class="header">
-            <div class="header__inner">
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="#contacts" class="nav-link">Contacts</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#summary" class="nav-link">Summary</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#education" class="nav-link">Education</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#experiece" class="nav-link">Experiece</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#skills" class="nav-link">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#code-example" class="nav-link">Code Example</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#english" class="nav-link">English</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="header-info">
                 <div class="header__photo">
-                    <img src="img/ava.jpg" alt="photo">
+                    <img src="./assets/img/ava.jpg" alt="photo">
                 </div>
                 <div class="header__name">
                     <h1>Andrew Bobrov</h1>
                     <p>Front-End Developer</p>
                 </div>
+            </div>  
+        </div>
+    </header>
+    <main class="main">
+        <div class="container main-container">
+            <section class="section" id="contacts">
+                <h2 class="section-title">contacts</h2>
+                <ul class="contacts-list">
+                    <li class="contacts-list__item">
+                        <span class="icon icon_location"></span>
+                        <a href="https://yandex.by/maps/158/mogilev/?ll=30.330654%2C53.894548&pt=30.330654%2C53.894548&source=entity_search&z=11" class="contacts-list__link" target="_blank">Mogilev, Belarus</a>
+                    </li>
+                    <li class="contacts-list__item">
+                        <span class="icon icon_phone"></span>
+                        <span>Phone: +375 44 7222622</span>
+                    </li>
+                    <li class="contacts-list__item">
+                        <span class="icon icon_git"></span>
+                        <a href="https://github.com/lam-ss" class="contacts-list__link" target="_blank">Github</a>
+                    </li>
+                </ul>
+            </section>
+            <section class="section" id="summary">
+                <h2 class="section-title">summary</h2>
+                <p class="section-text">The first scripts I wrote were written in VBA to simplify work in excel. Then my tasks became more complicated and I began to learn python.  Now I decided to take a JS course and look into the world of the web.</p>
+            </section>
+            <section class="section" id="education">
+                <h2 class="section-title">education</h2>
+                <p class="section-text">I have graduated from the Belarusian-Russian University degree in engineering at <time datetime="2007">2007</time>.</p>
+            </section>
+            <section class="section" id="experiece">
+                <h2 class="section-title">experiece</h2>
+                <a class="cv-link" href="https://lam-ss.github.io/rsschool-cv/cv">CV</a>
+            </section>
+            <section class="section" id="skills">
+                <h2 class="section-title">skills</h2>
+                <ul class="skills-list">
+                    <li class="skills-list__item">HTML</li>
+                    <li class="skills-list__item">CSS</li>
+                    <li class="skills-list__item">JS</li>
+                    <li class="skills-list__item">React</li>
+                    <li class="skills-list__item">Python</li>
+                </ul>
+            </section>
+            <section class="section" id="code-example">
+                <h2 class="section-title">code example</h2>
+                <code>
+                    console.log('Hello world!')
+                </code>
+            </section>
+            <section class="section" id="english">
+                <h2 class="section-title">english</h2>
+                <p class="section-text">A2</p>
+            </section>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="git-link">
+                <a href="https://github.com/Lam-ss">
+                    <img class="git-link-img" src="./assets/img/github.jpg" alt="github">
+                </a>
             </div>
-        </header>
-        <section class="contacts">
-            <h2 class="title">Contacts</h2>
-            <ul class="contacts-list">
-                <li class="contacts-list__item">
-                    <span class="icon icon_location"></span>
-                    <a href="https://yandex.by/maps/158/mogilev/?ll=30.330654%2C53.894548&pt=30.330654%2C53.894548&source=entity_search&z=11" class="contacts-list__link" target="_blank">Mogilev, Belarus</a>
-                </li>
-                <li class="contacts-list__item">
-                    <span class="icon icon_phone"></span>
-                    <span>Phone: +375 44 7222622</span>
-                </li>
-                <li class="contacts-list__item">
-                    <span class="icon icon_git"></span>
-                    <a href="https://github.com/lam-ss" class="contacts-list__link" target="_blank">Github</a>
-                </li>
-            </ul>
-        </section>
-        <section class="information">
-            <div class="information__inner">
-                <h2 class="title">About me</h2>
-                <p class="information__text">The first scripts I wrote were written in VBA to simplify work in excel. Then my tasks became more complicated and I began to learn python.  Now I decided to take a JS course and look into the world of the web.</p>
+            <div class="footer-links">
+                <a class="rss-link" href="https://rs.school/js/" target="_blank">
+                    <img class="rss-link__image" src="https://rs.school/images/rs_school_js.svg" alt="rss logo">
+                </a>
             </div>
-        </section>
-        <section class="education">
-            <h2 class="title">Education</h2>
-            <article class="university">
-                <h3 class="visually-hidden">University-1</h3>
-                <p class="university__profession">I have graduated from the Belarusian-Russian University degree in engineering at <time datetime="2007">2007</time>.</p>
-            </article>
-        </section>
-        <section class="experiece">
-            <h2 class="title">Experience</h2>
-            <a class="cv-link" href="https://lam-ss.github.io/rsschool-cv/cv">CV</a>
-        </section>
-        <section class="skills">
-            <h2 class="title">Skills</h2>
-            <ul class="skills-list">
-                <li class="skills-list__item">HTML</li>
-                <li class="skills-list__item">CSS</li>
-                <li class="skills-list__item">JS</li>
-                <li class="skills-list__item">React</li>
-                <li class="skills-list__item">Python</li>
-            </ul>
-        </section>
-        <section class="code__example">
-            <h2 class="title">Code Example</h2>
-            <code>
-                console.log('Hello world!')
-            </code>
-        </section>
-        <section class="english">
-            <h2 class="title">English</h2>
-            <p>A2</p>
-        </section>
-        <footer class="footer">
-            <div class="footer__inner">
-                <div class="git-link">
-                    <a href="https://github.com/Lam-ss">
-                        <img class="git-link-img" src="./img/github.jpg" alt="github">
-                    </a>
-                </div>
-                <div class="footer__links">
-                    <a class="rss-link" href="https://rs.school/js/" target="_blank"><img class="rss-link__image" src="https://rs.school/images/rs_school_js.svg" alt="rss logo"> https://rs.school/js/</a>
-                </div>
-                <time datetime="2021">2022</time>
-            </div>
-        </footer>
-    </div>
+            <time datetime="2022">2022</time>
+        </div>
+    </footer>
 </body>
 </html>
